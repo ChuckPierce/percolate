@@ -26,6 +26,13 @@ h3 {
 	font-size: 20px;
 }
 
+h2 {
+	text-transform: uppercase;
+	font-family: $secondary-font;
+	color: #f16421;
+	font-size: 20px;
+}
+
 img {
 	max-width: 100%;
 }
@@ -34,6 +41,7 @@ img {
 // injector
 @import 'directives/banner/banner.scss';
 @import 'directives/casestudy/casestudy.scss';
+@import 'directives/form/form.scss';
 @import 'main/main.scss';
 @import 'modal/modal.scss';
 @import 'navbar/navbar.scss';
