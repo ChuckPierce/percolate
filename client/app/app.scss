@@ -23,11 +23,17 @@ h1 {
 
 h3 {
 	font-family: $secondary-font;
+	font-size: 20px;
+}
+
+img {
+	max-width: 100%;
 }
 
 // Component styles are injected through grunt
 // injector
 @import 'directives/banner/banner.scss';
+@import 'directives/casestudy/casestudy.scss';
 @import 'main/main.scss';
 @import 'modal/modal.scss';
 @import 'navbar/navbar.scss';
