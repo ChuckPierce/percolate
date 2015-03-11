@@ -1,5 +1,7 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 $fa-font-path: "/bower_components/font-awesome/fonts";
+$primary-font: "Sentinel A","Sentinel B",Georgia,serif;
+$secondary-font: "Futura W01 Bold",Arial,sans-serif;
 
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 @import 'font-awesome/scss/font-awesome';
@@ -15,8 +17,17 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
     padding: 0.2em 0;
 }
 
+h1 {
+	font-family: $primary-font;
+}
+
+h3 {
+	font-family: $secondary-font;
+}
+
 // Component styles are injected through grunt
 // injector
+@import 'directives/banner/banner.scss';
 @import 'main/main.scss';
 @import 'modal/modal.scss';
 @import 'navbar/navbar.scss';
