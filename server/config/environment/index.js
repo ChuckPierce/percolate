@@ -41,6 +41,10 @@ var all = {
     }
   },
 
+  mandrill: {
+    apiKey: process.env.MANDRILL_API_KEY
+  }
+
 };
 
 // Export the config object based on the NODE_ENV

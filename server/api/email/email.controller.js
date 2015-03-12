@@ -2,12 +2,11 @@
 
 var _ = require('lodash'),
         mandrill = require('mandrill-api/mandrill'),
-        mandrill_client = new mandrill.Mandrill('GPFPphz-FLOLFRfDIoQD3g');
+        key = require('../../config/environment'),
+        mandrill_client = new mandrill.Mandrill(key.mandrill.apiKey);
 
 // Get list of emails
-exports.index = function(req, res) {
-
-  console.log(req.body);
+exports.email = function(req, res) {
 
   var message = {
     'subject': 'Your Percolate demo is ready!',
