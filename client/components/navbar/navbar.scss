@@ -1,15 +1,14 @@
 $nav-font: "Sentinel A","Sentinel B",Georgia,serif;
+$nav-secondary-font: "Helvetica Neue",Helvetica,Arial,sans-serif;
 $hover-color: #f16421;
 
 .primary-nav {
 	font-family: $nav-font;
 	font-size: 18px;
-	margin-bottom: 20px;
 }
 .secondary-nav {
 	font-family: $nav-font;
 	font-size: 18px;
-	margin-bottom: 20px;
 }
 
 .nav > li > a {
@@ -36,6 +35,7 @@ $hover-color: #f16421;
 
 .nav-container {
   margin-top: 10px;
+  width: 100%;
 }
 
 .nav-toggle {
@@ -73,3 +73,12 @@ $hover-color: #f16421;
   margin-top: 20px;
   border-width: 0 0 0px;
 }
+
+@media (min-width: 1180px) {
+  .secondary-nav {
+  	font-size: 13px;
+  	font-family: $nav-secondary-font;
+  	margin-top: 5px;
+  }
+}
+
