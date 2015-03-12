@@ -2,16 +2,13 @@ $nav-font: "Sentinel A","Sentinel B",Georgia,serif;
 $nav-secondary-font: "Helvetica Neue",Helvetica,Arial,sans-serif;
 $hover-color: #f16421;
 
-.primary-nav {
-	font-family: $nav-font;
-	font-size: 18px;
-}
 .secondary-nav {
-	font-family: $nav-font;
-	font-size: 18px;
+	min-width: 400px;
 }
 
 .nav {
+	font-family: $nav-font;
+	font-size: 18px;
 	ul {
 		line-height: 18px;
 	}
@@ -31,9 +28,10 @@ $hover-color: #f16421;
   width: 100%;
 }
 
-.nav-toggle {
+.navbar-toggle {
 	margin-top: 0;
-	border: 0px solid transparent;
+	border: 0px;
+	border-color: none;
 }
 
 .navbar-collapse {
@@ -68,10 +66,28 @@ $hover-color: #f16421;
 }
 
 @media (min-width: 1180px) {
+
   .secondary-nav {
   	font-size: 13px;
   	font-family: $nav-secondary-font;
   	margin-top: 5px;
+  	min-width: 0;
   }
+}
+
+@media (max-width: 1180px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+    
 }
 
