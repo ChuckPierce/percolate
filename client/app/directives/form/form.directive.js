@@ -9,10 +9,13 @@ angular.module('percolateApp')
       }
     };
   })
-  .controller('FormCtrl', function($scope) {
+  .controller('FormCtrl', function($scope, $http) {
   	$scope.inputs = ['First Name', 'Last Name', 'Company'];
   	$scope.email = {};
   	$scope.sendEmail = function() {
-  		console.log($scope.email);
+  		$http.post('/api/emails', $scope.email).success(function(data) {
+  			console.log(data);
+  			$scope.email = {};
+  		})
   	}
   });

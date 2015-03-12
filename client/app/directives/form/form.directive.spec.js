@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Directive: form', function () {
+describe('Directive: demoform', function () {
 
   // load the directive's module and view
   beforeEach(module('percolateApp'));
@@ -13,9 +13,9 @@ describe('Directive: form', function () {
   }));
 
   it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<form></form>');
+    element = angular.element('<demoform></demoform>');
     element = $compile(element)(scope);
     scope.$apply();
-    expect(element.text()).toBe('this is the form directive');
+    expect(element.text()).toBe('this is the demoform directive');
   }));
 });
