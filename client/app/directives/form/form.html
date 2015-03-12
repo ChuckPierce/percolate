@@ -13,6 +13,6 @@
 			</div>
 			<button type="submit" class="btn btn-primary" ng-disabled="demoForm.$invalid">See Percolate</button>
 		</form>
-		<p class='help-block'>{{message}}</p>
+		<p class='help-block' ng-class='{red: message.error, green: !message.error}'>{{message.text}}</p>
 	</div>
 </div>
