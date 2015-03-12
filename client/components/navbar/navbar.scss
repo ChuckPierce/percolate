@@ -11,19 +11,13 @@ $hover-color: #f16421;
 	font-size: 18px;
 }
 
-.nav > li > a {
-	display: inline;
-}
-
-.nav > li {
-	display: inline;
-	margin-right: 5px;
-	margin-top: 12px;
-}
-
 .nav {
 	ul {
 		line-height: 18px;
+	}
+	li {
+		float: left;
+		margin-right: 5px;
 	}
 }
 
@@ -34,7 +28,6 @@ $hover-color: #f16421;
 }
 
 .nav-container {
-  margin-top: 10px;
   width: 100%;
 }
 
