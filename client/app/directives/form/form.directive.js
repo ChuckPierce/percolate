@@ -16,6 +16,11 @@ angular.module('percolateApp')
   		$http.post('/api/emails', $scope.email).success(function(data) {
   			console.log(data);
   			$scope.email = {};
+  			$scope.message = 'Request for demo sent!'
+  		}).error(function(err) {
+  			console.log(err);
+  			$scope.email = {}
+  			$scope.message = 'Something went wrong.  Please try submitting again';
   		})
   	}
   });
