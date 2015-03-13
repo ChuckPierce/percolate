@@ -2,6 +2,8 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 $fa-font-path: "/bower_components/font-awesome/fonts";
 $primary-font: "Sentinel A","Sentinel B",Georgia,serif;
 $secondary-font: "Futura W01 Bold",Arial,sans-serif;
+$link-color: #0a506c;
+$link-hover-color: #f16421;
 
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 @import 'font-awesome/scss/font-awesome';
@@ -36,6 +38,16 @@ h2 {
 
 img {
 	max-width: 100%;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $link-hover-color;
+	text-decoration: none;
 }
 
 // Component styles are injected through grunt

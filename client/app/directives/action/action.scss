@@ -1,0 +1,23 @@
+.actions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    text-align: center;
+
+    h2 {
+        font-size: 20px;
+        text-transform: none;
+        font-family: $secondary-font;
+        text-align: center;
+    }
+    img {
+        margin: auto 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .actions-container {
+        flex-direction: column;
+    }
+}

@@ -8,7 +8,8 @@ angular.module('percolateApp')
       transclude: true,
       scope: {
       	title: '@',
-      	image: '@'
+      	image: '@',
+      	icon: '@'
       },
       link: function (scope, element, attrs) {
       }
