@@ -10,7 +10,6 @@ angular.module('percolateApp')
       	title: '@'
       },
       link: function (scope, element, attrs) {
-        console.log(element.html());
       }
     };
   });
