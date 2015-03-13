@@ -37,4 +37,4 @@ To achieve sending an email I used a combination of ```nodemailer``` and Mailgun
 
 ##Future
 
-If I had more time I would probably continue to tweak the layout a little more and also try to continue to make things more modular.  Otherwise I am happy with my work on this project.  Please [email me](chuckmpierce@gmail.com) if you have any questions!
+If I had more time I would probably continue to tweak the layout a little more and also try to continue to make things more modular.  Otherwise I am happy with my work on this project.  Please email me at <chuckmpierce@gmail.com> if you have any questions!
