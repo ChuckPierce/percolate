@@ -6,7 +6,8 @@ angular.module('percolateApp')
       templateUrl: 'app/directives/banner/banner.html',
       restrict: 'E',
       scope: {
-      	message: '@'
+      	message: '@',
+        image: '@'
       },
       link: function (scope, element, attrs) {
       }

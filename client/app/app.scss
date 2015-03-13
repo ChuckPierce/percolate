@@ -24,6 +24,7 @@ h1 {
 h3 {
 	font-family: $secondary-font;
 	font-size: 20px;
+	font-weight: bold;
 }
 
 h2 {
@@ -42,6 +43,7 @@ img {
 @import 'directives/banner/banner.scss';
 @import 'directives/casestudy/casestudy.scss';
 @import 'directives/form/form.scss';
+@import 'directives/highlight/highlight.scss';
 @import 'main/main.scss';
 @import 'navbar/navbar.scss';
 // endinjector
