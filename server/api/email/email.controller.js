@@ -1,9 +1,8 @@
 'use strict';
 
-var _ = require('lodash'),
-        config = require('../../config/environment'),
-        nodemailer = require('nodemailer'),
-        transport = require('nodemailer-smtp-transport');
+var config = require('../../config/environment'),
+    nodemailer = require('nodemailer'),
+    transport = require('nodemailer-smtp-transport');
 
 var stmp = nodemailer.createTransport(transport({ 
           service: "Mailgun",
@@ -13,14 +12,14 @@ var stmp = nodemailer.createTransport(transport({
           }
         }));
 
-// Get list of emails
+// Send email to person who filled out the form on the website
 exports.email = function(req, res) {
 
     var message = {
       from: 'chuckmpierce@gmail.com',
       to: req.body['Company Email'],
       subject: 'Thanks for requesting a demo!',
-      text: 'Thanks for requesting a demo.  One of our sales reps will be in touch!'
+      text: 'Thank you ' + req.body['First Name'] + ' ' + req.body['Last Name'] + ' for requesting a demo. We want to help ' + req.body['Company'] + ' get one step ahead in their marketing strategy. One of our sales reps will be in touch!'
     };
 
       stmp.sendMail(message, function(err, info) {  
