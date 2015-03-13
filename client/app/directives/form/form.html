@@ -1,7 +1,7 @@
-<div ng-controller="FormCtrl" class="text-center">
+<div ng-controller="FormCtrl" class="text-center form-div">
 	<h2 class="form-header">See Percolate In Action</h2>
 	<div class="form-container">
-		<form ng-submit="sendEmail()" name="demoForm" novaildate>
+		<form name="demoForm" novaildate>
 			<div class="form-group" ng-repeat="input in inputs">
 				<input type="text" ng-model="email[input]" placeholder="{{input}}" class="form-control" ng-required="true" ng-minlength="2">
 			</div>
@@ -11,10 +11,10 @@
 			<div class="form-group">
 				<input type="text" ng-model="email['Phone Number']" class="form-control" ng-required="true" ui-mask="{{'(999) 999-9999'}}" ui-mask-placeholder="______________" placeholder="Phone Number">
 			</div>
-			<div class="submit-btn">
-				<button type="submit" class="btn btn-primary" ng-disabled="demoForm.$invalid">See Percolate</button>
-			</div>
 		</form>
 		<p class='help-block' ng-class='{red: message.error, green: !message.error}'>{{message.text}}</p>
+	</div>
+	<div class="submit-btn">
+		<button type="submit" ng-disabled="demoForm.$invalid" ng-click="sendEmail()">See Percolate</button>
 	</div>
 </div>

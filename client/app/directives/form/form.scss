@@ -1,3 +1,5 @@
+$button-color: #a42c50;
+
 .form-header {
 	margin-bottom: 40px;
 }
@@ -10,6 +12,23 @@
 	color: green;
 }
 
+.form-div {
+	margin-bottom: 50px;
+
+	button {
+		color: $button-color;
+		font-family: $secondary-font;
+		border: 1px solid $button-color;
+		text-transform: uppercase;
+		background: 0 0;
+		padding: 10px 20px;
+	}
+
+	button[disabled] {
+		opacity: 0.65;
+	}
+}
+
 @media (min-width: 900px) { 
 	.form-container form {
 		display: flex;
@@ -19,6 +38,7 @@
 	.submit-btn {
 		clear: both;
 		display: block;
+		margin-top: 20px;
 	}
 	.form-group {
 		margin-right: 10px;
