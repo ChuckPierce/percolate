@@ -11,7 +11,9 @@
 			<div class="form-group">
 				<input type="text" ng-model="email['Phone Number']" class="form-control" ng-required="true" ui-mask="{{'(999) 999-9999'}}" ui-mask-placeholder="______________" placeholder="Phone Number">
 			</div>
-			<button type="submit" class="btn btn-primary" ng-disabled="demoForm.$invalid">See Percolate</button>
+			<div class="submit-btn">
+				<button type="submit" class="btn btn-primary" ng-disabled="demoForm.$invalid">See Percolate</button>
+			</div>
 		</form>
 		<p class='help-block' ng-class='{red: message.error, green: !message.error}'>{{message.text}}</p>
 	</div>
