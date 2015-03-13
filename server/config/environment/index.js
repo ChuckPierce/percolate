@@ -41,9 +41,10 @@ var all = {
     }
   },
 
-  mandrill: {
-    apiKey: process.env.MANDRILL_API_KEY
-  }
+  mailgun: {
+    user: process.env.MAILGUN_USER,
+    password: process.env.MAILGUN_PASSWORD
+  },
 
 };
 

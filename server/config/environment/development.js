@@ -8,8 +8,9 @@ module.exports = {
     uri: 'mongodb://localhost/percolate-dev'
   },
 
-  mandrill: {
-  	apiKey: localENV.MANDRILL_API_KEY
+  mailgun: {
+  	user: localENV.MAILGUN_USER,
+  	password: localENV.MAILGUN_PASSWORD
   },
 
   seedDB: false

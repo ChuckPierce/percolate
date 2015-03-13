@@ -1,17 +1,15 @@
 'use strict';
 
 var _ = require('lodash'),
-        mandrill = require('mandrill-api/mandrill'),
-        key = require('../../config/environment'),
-        mandrill_client = new mandrill.Mandrill(key.mandrill.apiKey),
+        config = require('../../config/environment'),
         nodemailer = require('nodemailer'),
         transport = require('nodemailer-smtp-transport');
 
 var stmp = nodemailer.createTransport(transport({ 
           service: "Mailgun",
           auth: {
-            user: "postmaster@sandbox8f67228da981480ca21174dff1255fbc.mailgun.org",
-            pass: "59bcc8679ab585cc29c7a9386ee906b0"
+            user: config.mailgun.user,
+            pass: config.mailgun.password
           }
         }));
 
