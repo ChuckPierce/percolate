@@ -21,7 +21,7 @@ I focused on making things modular, using directives for each section of the app
 
 6. Form - this directive ```<demoform>``` is what is used to send an email to a customer who is requesting a demo of the product.  The styling of the form is all contained within the directive and will display the same on every page it is used on.
 
-#Bootstrap
+###Bootstrap
 
 I used Twitter Bootstrap for some of the mobile styling but realized that I had to do a lot of customization to achieve what I wanted.  It took some time to cutomize but it worked out in the end.  In hindsight I would have probably just created the styles from scratch.
 
