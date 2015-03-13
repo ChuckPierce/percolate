@@ -1,0 +1,77 @@
+.quote-text {
+	font-family: $primary-font;
+	img {
+		height: 48px;
+		width: 48px;
+	}
+}
+
+.pad {
+	margin-bottom: 100px;
+}
+
+.pad-highlighted {
+	text-align: center;
+	padding: 40px;
+	align-content: center;
+	background-color: rgba(31,9,60,.8);
+	span {
+		margin-left: 20px;
+	}
+}
+
+.quote-highlighted {
+	display: block;
+	color: #fff;
+	clear: both;
+	background-image: url('http://percolate.com/static/images/case_studies/mastercard/quote.jpg');
+	background-repeat: no-repeat;
+	background-position: cover;
+	min-height: 300px;
+	p {
+		color: #fff;
+		font-style: italic;
+		font-size: 24px;
+		font-family: $primary-font;
+	}
+}
+
+.quote-normal {
+	display: block;
+	clear: both;
+	p {
+		font-style: italic;
+		font-size: 2em;
+		font-family: $primary-font;
+	}
+}
+
+.pad-normal {
+	h1 {
+		color: $link-hover-color;
+		font-family: $primary-font;
+		font-size: 3em;
+		margin-bottom: 20px;
+	}
+}
+
+
+@media (max-width: 900px) {
+	.quote-highlighted {
+		p {
+			font-size: 16px;
+		}
+	}
+
+	.quote-normal {
+		p {
+			font-size: 16px;
+		}
+	}
+
+	.pad-normal {
+		h1 {
+			font-size: 1.5em
+		}
+	}
+}
