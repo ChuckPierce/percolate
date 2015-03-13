@@ -10,8 +10,6 @@ angular.module('percolateApp')
       	title: '@',
       	image: '@',
       	icon: '@'
-      },
-      link: function (scope, element, attrs) {
       }
     };
   });

@@ -8,8 +8,6 @@ angular.module('percolateApp')
       scope: {
       	message: '@',
         image: '@'
-      },
-      link: function (scope, element, attrs) {
       }
     };
   });

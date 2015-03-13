@@ -12,6 +12,7 @@
 				<input type="email" ng-model="email['Company Email']" class="form-control" placeholder="Company Email" ng-required="true">
 			</div>
 			<div class="form-group">
+				<!-- this is where the ui.mask module is used -->
 				<input type="text" ng-model="email['Phone Number']" class="form-control" ng-required="true" ui-mask="{{'(999) 999-9999'}}" ui-mask-placeholder="______________" placeholder="Phone Number">
 			</div>
 		</form>

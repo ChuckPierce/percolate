@@ -8,8 +8,6 @@ angular.module('percolateApp')
       transclude: true,
       scope: {
       	title: '@'
-      },
-      link: function (scope, element, attrs) {
       }
     };
   });

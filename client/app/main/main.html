@@ -1,3 +1,20 @@
+<!-- This is the main view where all of the directives are used.  
+	There are six directives.
+	
+	1. Banner - this directive <banner> displays the banner with the customized message through the "message" attribute as well as a customized image through the "image" attribute.
+	
+	2. Hightlight - this directive <highlight> just formats the highlight text for the summary of the case study. Mostly used for templating.
+	
+	3. Quote - this directive <quote> has two separate "qtypes", the "quote-hightlighted" type and the "quote-normal" type.  Each type will display differently on the page but is used in the same directive.  This type logic could also be used to create other types of directives.
+	
+	4. Casestudy  - this directive <casestudy> displays the small case study blocks near the bottom of the page.  For each directive you can put a paragraph tag and an image tag inside as well as a "title" attribute.  The person coding the layout can organize them in any way they see fit.
+
+	5. Action - this directive <action> is similar to the case study but uses links.  This can also be customized with a "title", "image", and "icon" attribute.
+
+	6. Form - this directive <demoform> is what is used to send an email to a customer who is requesting a demo of the product.  The styling of the form is all contained within the directive and will display the same on every page it is used on.    
+
+ -->
+ 
 <banner message="Creating Client Based Solutions For Marketing" image="http://news.oldspice.com/sites/oldspice.newshq.businesswire.com/files/logo/image/Old_Spice_Logo_highres.jpg"></banner>
 
 <highlight>

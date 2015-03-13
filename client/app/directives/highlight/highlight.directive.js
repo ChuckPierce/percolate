@@ -5,8 +5,6 @@ angular.module('percolateApp')
     return {
       templateUrl: 'app/directives/highlight/highlight.html',
       restrict: 'E',
-      transclude: true,
-      link: function (scope, element, attrs) {
-      }
+      transclude: true
     };
   });

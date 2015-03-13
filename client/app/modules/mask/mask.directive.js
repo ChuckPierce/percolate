@@ -1,3 +1,10 @@
+/* 
+  This module was taken directly from the angular-ui-utils module.  
+  The module masks inputs and it is used to mask the phone number in the demo form.
+  The mask module is modified slightly so that a HTML placeholder can be displayed and not be masked.
+  If this placeholder bug is fixed soon, this module can be installed by bower.
+*/
+
 angular.module('ui.mask', [])
   .value('uiMaskConfig', {
     'maskDefinitions': {
