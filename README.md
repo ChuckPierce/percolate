@@ -5,7 +5,7 @@ See a live version of the app [here](http://oldspicepercolate.herokuapp.com).
 
 ## Frontend
 
-#Modular
+###Modular
 
 I focused on making things modular, using directives for each section of the application which could easily be customized to fit any page that another fellow frontend engineer would be making with different assets.  There are six directives that I believe accomplished this goal:
 
@@ -19,9 +19,7 @@ I focused on making things modular, using directives for each section of the app
 
 5. Action - this directive ```<action>``` is similar to the case study but uses links.  This can also be customized with a "title", "image", and "icon" attribute.
 
-6. Form - this directive ```<demoform>``` is what is used to send an email to a customer who is requesting a demo of the product.  The styling of the form is all contained within the directive and will display the same on every page it is used on.  
-## Examples
-### Demo
+6. Form - this directive ```<demoform>``` is what is used to send an email to a customer who is requesting a demo of the product.  The styling of the form is all contained within the directive and will display the same on every page it is used on.
 
 #Bootstrap
 
@@ -29,15 +27,14 @@ I used Twitter Bootstrap for some of the mobile styling but realized that I had 
 
 ##Backend
 
-#Server
+###Server
 
 I used Node/Express for my server-side code.  I used one simple express route to talk between the frontend and the backend of the application.
 
-#Email
+###Email
 
 To achieve sending an email I used a combination of ```nodemailer``` and Mailgun.  I initially used Mandrill but their server seemed to lag sometimes when sending emails.  When I switched to nodemailer I stopped having that problem
 
 ##Future
 
 If I had more time I would probably continue to tweak the layout a little more and also try to continue to make things more modular.  Otherwise I am happy with my work on this project.  Please [email me](chuckmpierce@gmail.com) if you have any questions!
-
